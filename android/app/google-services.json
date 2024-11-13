@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "671504634946",
+    "project_id": "projek-money-record",
+    "storage_bucket": "projek-money-record.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:671504634946:android:5cd994dc534cab630b09db",
+        "android_client_info": {
+          "package_name": "com.example.Money_Record"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDPGKpOPkNfiaV0VAGvMiMeJjBVjVXPZlI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:671504634946:android:cfdbf37c31e6b7c30b09db",
+        "android_client_info": {
+          "package_name": "com.example.money_record"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDPGKpOPkNfiaV0VAGvMiMeJjBVjVXPZlI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

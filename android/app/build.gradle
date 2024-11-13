@@ -1,0 +1,51 @@
+plugins {
+    id "com.android.application"
+    // START: FlutterFire Configuration
+    id 'com.google.gms.google-services'
+    // END: FlutterFire Configuration
+    id "kotlin-android"
+    id "dev.flutter.flutter-gradle-plugin" // Flutter Gradle Plugin harus di akhir
+}
+
+android {
+    namespace = "com.example.Money_Record"
+    compileSdkVersion 34  // Tentukan versi SDK secara eksplisit
+    buildscript {
+    dependencies {
+        // Tambahkan baris ini
+        classpath 'com.google.gms:google-services:4.3.10' // versi terbaru
+
+        apply plugin: 'com.google.gms.google-services'
+    }
+}
+
+    defaultConfig {
+        applicationId "com.example.Money_Record"
+        minSdkVersion 23  // Tentukan versi minSdk secara eksplisit (misalnya 21)
+        targetSdkVersion 34  // Tentukan target SDK
+        versionCode 1
+        versionName "1.0.0"
+
+        // Konfigurasi tambahan
+        ndkVersion "21.4.7075529"
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+
+    buildTypes {
+        release {
+            signingConfig signingConfigs.debug
+        }
+    }
+}
+
+flutter {
+    source "../.."  // Pastikan ini mengarah ke folder Flutter yang benar
+}
